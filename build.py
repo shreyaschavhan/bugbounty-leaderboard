@@ -305,7 +305,8 @@ def main():
             'previous_week_scores': previous_week_scores,
             'past_self_avg': round(past_self_avg, 1),
             'present_self_score': round(present_self_score, 1),
-            'future_self_projection': round(future_self_projection, 1)
+            'future_self_projection': round(future_self_projection, 1),
+            'relative_path': '../'  # This will help with relative paths in user pages
         }
         try:
             user_html = dashboard_template.render(**dashboard_context)
