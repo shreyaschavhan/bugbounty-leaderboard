@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7-Day Leaderboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="background-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+    
+    <div class="container">
+        <header class="arena-header">
+            <div class="header-content">
+                <h1><i class="fa-solid fa-trophy"></i> 7-Day Rolling Leaderboard</h1>
+                <p>Tracking contributions from 2025-09-07 to 2025-09-14</p>
+            </div>
+            <div class="header-actions">
+                <button class="btn-icon" id="themeToggle">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+            </div>
+        </header>
+
+        
+<div class="competition-status">
+    <div class="status-pill">
+        <span>🏆 1 Contributors Tracking</span>
+    </div>
+</div>
+
+<div class="content-grid">
+    <section class="leaderboard-card">
+        <div class="card-header">
+            <h2><i class="fa-solid fa-ranking-star"></i> Leaderboard</h2>
+        </div>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th class="rank">Rank</th>
+                        <th>Name</th>
+                        <th>Score</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    
+                    
+                        
+                    
+                    <tr class="tier-4" onclick="window.location='users/user_fahad_aka_epic.html';">
+                        <td class="rank">1</td>
+                        <td class="user-name">
+                            <div class="avatar-small">
+                                F
+                            </div>
+                            Fahad aka Epic
+                        </td>
+                        <td class="score-value">59.0</td>
+                        <td class="action-count">
+                            <i class="fa-solid fa-list-check"></i>
+                            1
+                        </td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section class="recent-actions-card">
+        <div class="card-header">
+            <h2><i class="fa-solid fa-bolt"></i> Recent Deep Actions</h2>
+        </div>
+        <div class="actions-container">
+            
+            <div class="action-card-modern" onclick="openModal('Session 1 - You Scored 19, Input: 19 (Phone number change bypass)  Session 2 - You Scored 21, Input: 21 (Developer API key â Org takeover)  Session 3 - You Scored 19, Input: 19 (Chat IDOR via app-chat-id)  Session Total = 59', 'Fahad aka Epic', '59.0', '2025-09-13 20:23')">
+                <div class="action-header-modern">
+                    <div class="action-user">
+                        <div class="avatar-xs">
+                            F
+                        </div>
+                        <span>Fahad aka Epic</span>
+                    </div>
+                    <span class="action-score">+59.0 pts</span>
+                </div>
+                <div class="action-summary-modern">
+                    Session 1 - You Scored 19, Input: 19 (Phone number change bypass)  Session 2 - You Scored 21,...
+                </div>
+                <div class="action-time-modern">
+                    <i class="fa-regular fa-clock"></i>
+                    2025-09-13 20:23
+                </div>
+            </div>
+            
+        </div>
+    </section>
+</div>
+
+<div id="modal" class="modal">
+    <div class="modal-content modern-modal">
+        <span class="close">&times;</span>
+        <h2 id="modal-title">Action Summary</h2>
+        <div class="modal-user-info">
+            <span id="modal-user"></span>
+            <span id="modal-score" class="modal-score-badge"></span>
+        </div>
+        <p id="modal-details"></p>
+        <p id="modal-time" class="modal-time"></p>
+    </div>
+</div>
+
+
+        <footer>
+            <p>Last updated: 2025-09-14 08:42:15</p>
+        </footer>
+    </div>
+    <script src="/static/js/script.js"></script>
+</body>
+</html>
