@@ -1,0 +1,98 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="competition-status">
+    <div class="status-pill">
+        <span>🏆 {{ sorted_users|length }} Contributors Tracking</span>
+    </div>
+</div>
+
+<div class="content-grid">
+    <section class="leaderboard-card">
+        <div class="card-header">
+            <h2><i class="fa-solid fa-ranking-star"></i> Leaderboard</h2>
+        </div>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th class="rank">Rank</th>
+                        <th>Name</th>
+                        <th>Score</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for rank, user in sorted_users %}
+                    {% set rank_percent = (rank / sorted_users|length) %}
+                    {% if rank_percent <= 0.2 %}
+                        {% set tier_class = 'tier-1' %}
+                    {% elif rank_percent <= 0.5 %}
+                        {% set tier_class = 'tier-2' %}
+                    {% elif rank_percent <= 0.8 %}
+                        {% set tier_class = 'tier-3' %}
+                    {% else %}
+                        {% set tier_class = 'tier-4' %}
+                    {% endif %}
+                    <tr class="{{ tier_class }}" onclick="window.location='users/user_{{ user[0]|lower|replace(' ', '_') }}.html';">
+                        <td class="rank">{{ rank }}</td>
+                        <td class="user-name">
+                            <div class="avatar-small">
+                                {{ user[0][0]|upper }}
+                            </div>
+                            {{ user[0] }}
+                        </td>
+                        <td class="score-value">{{ user[1] }}</td>
+                        <td class="action-count">
+                            <i class="fa-solid fa-list-check"></i>
+                            {{ user_actions[user[0]]|length if user[0] in user_actions else 0 }}
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section class="recent-actions-card">
+        <div class="card-header">
+            <h2><i class="fa-solid fa-bolt"></i> Recent Deep Actions</h2>
+        </div>
+        <div class="actions-container">
+            {% for action in top_recent_actions %}
+            <div class="action-card-modern" onclick="openModal('{{ action.summary|escape }}', '{{ action.name }}', '{{ action.score }}', '{{ action.timestamp.strftime('%Y-%m-%d %H:%M') }}')">
+                <div class="action-header-modern">
+                    <div class="action-user">
+                        <div class="avatar-xs">
+                            {{ action.name[0]|upper }}
+                        </div>
+                        <span>{{ action.name }}</span>
+                    </div>
+                    <span class="action-score">+{{ action.score }} pts</span>
+                </div>
+                <div class="action-summary-modern">
+                    {{ action.summary|escape|truncate(100) }}
+                </div>
+                <div class="action-time-modern">
+                    <i class="fa-regular fa-clock"></i>
+                    {{ action.timestamp.strftime('%Y-%m-%d %H:%M') }}
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </section>
+</div>
+
+<div id="modal" class="modal">
+    <div class="modal-content modern-modal">
+        <span class="close">&times;</span>
+        <h2 id="modal-title">Action Summary</h2>
+        <div class="modal-user-info">
+            <span id="modal-user"></span>
+            <span id="modal-score" class="modal-score-badge"></span>
+        </div>
+        <p id="modal-details"></p>
+        <p id="modal-time" class="modal-time"></p>
+    </div>
+</div>
+{% endblock %}
