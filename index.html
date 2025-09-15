@@ -39,7 +39,7 @@
         
 <div class="competition-status">
     <div class="status-pill">
-        <span>🏆 5 Contributors Tracking</span>
+        <span>🏆 6 Contributors Tracking</span>
     </div>
 </div>
 
@@ -102,7 +102,7 @@
                     
                         
                     
-                    <tr class="tier-3" onclick="window.location='users/user_kuro.html';">
+                    <tr class="tier-2" onclick="window.location='users/user_kuro.html';">
                         <td class="rank">3</td>
                         <td class="user-name">
                             <div class="avatar-small">
@@ -121,8 +121,27 @@
                     
                         
                     
-                    <tr class="tier-3" onclick="window.location='users/user_uday.html';">
+                    <tr class="tier-3" onclick="window.location='users/user_abdulhafiz.html';">
                         <td class="rank">4</td>
+                        <td class="user-name">
+                            <div class="avatar-small">
+                                A
+                            </div>
+                            Abdulhafiz
+                        </td>
+                        <td class="score-value">28.25</td>
+                        <td class="action-count">
+                            <i class="fa-solid fa-list-check"></i>
+                            2
+                        </td>
+                    </tr>
+                    
+                    
+                    
+                        
+                    
+                    <tr class="tier-4" onclick="window.location='users/user_uday.html';">
+                        <td class="rank">5</td>
                         <td class="user-name">
                             <div class="avatar-small">
                                 U
@@ -141,7 +160,7 @@
                         
                     
                     <tr class="tier-4" onclick="window.location='users/user_shubham_khanna.html';">
-                        <td class="rank">5</td>
+                        <td class="rank">6</td>
                         <td class="user-name">
                             <div class="avatar-small">
                                 S
@@ -165,6 +184,52 @@
             <h2><i class="fa-solid fa-bolt"></i> Recent Deep Actions</h2>
         </div>
         <div class="actions-container">
+            
+            <div class="action-card-modern"
+                 data-summary="H: The target platform may be vulnerable to IDOR, allowing unauthorized access to other clinic schedules.M: Used Burp Suite to intercept and modify the clinic_id parameter.T: The clinic_id parameter in schedule-related requests.R: Able to view appointment schedules of other clinics without authorization."
+                 data-user="Abdulhafiz"
+                 data-score="22.5"
+                 data-time="2025-09-16 00:59">
+                <div class="action-header-modern">
+                    <div class="action-user">
+                        <div class="avatar-xs">
+                            A
+                        </div>
+                        <span>Abdulhafiz</span>
+                    </div>
+                    <span class="action-score">+22.5 pts</span>
+                </div>
+                <div class="action-summary-modern">
+                    H: The target platform may be vulnerable to IDOR, allowing unauthorized access to other clinic...
+                </div>
+                <div class="action-time-modern">
+                    <i class="fa-regular fa-clock"></i>
+                    2025-09-16 00:59
+                </div>
+            </div>
+            
+            <div class="action-card-modern"
+                 data-summary="Found an html injection in a programH: The Invite User modal in the program Dashboard may be vulnerable to HTML injection via the &#34;Link to Practitioner&#34; dropdown field.M: Manual testing with a crafted practitioner Display Name containing an HTML payload, later used in the Invite User modal.T: The &#34;Link to Practitioner&#34; dropdown field in the Invite User modal.R: The payload successfully rendered as custom HTML (a large clickable red/yellow banner linking to evil.com)."
+                 data-user="Abdulhafiz"
+                 data-score="5.75"
+                 data-time="2025-09-16 00:54">
+                <div class="action-header-modern">
+                    <div class="action-user">
+                        <div class="avatar-xs">
+                            A
+                        </div>
+                        <span>Abdulhafiz</span>
+                    </div>
+                    <span class="action-score">+5.75 pts</span>
+                </div>
+                <div class="action-summary-modern">
+                    Found an html injection in a programH: The Invite User modal in the program Dashboard may be...
+                </div>
+                <div class="action-time-modern">
+                    <i class="fa-regular fa-clock"></i>
+                    2025-09-16 00:54
+                </div>
+            </div>
             
             <div class="action-card-modern"
                  data-summary="In this session, the tester investigated an IDOR-like vulnerability within an organizationâs multi-builder setup. The hypothesis was that a builder-level account in org1 might be able to tamper with or impact another builder accountâs resources.Using Caido for traffic inspection and manual request manipulation, the tester took requests originating from a builder1 application and modified both the JWT token and CSRF token to values belonging to builder2. Despite documentation explicitly stating that âno one can act without joining the application,â the tester observed that builder2 could delete builder1âs favorites folder, demonstrating unauthorized cross-account access."
@@ -350,29 +415,6 @@
                 </div>
             </div>
             
-            <div class="action-card-modern"
-                 data-summary="Session 1 - You Scored 19, Input: 19 (Phone number change bypass)  Session 2 - You Scored 21, Input: 21 (Developer API key â Org takeover)  Session 3 - You Scored 19, Input: 19 (Chat IDOR via app-chat-id)  Session Total = 59"
-                 data-user="Fahad aka Epic"
-                 data-score="59.0"
-                 data-time="2025-09-13 20:23">
-                <div class="action-header-modern">
-                    <div class="action-user">
-                        <div class="avatar-xs">
-                            F
-                        </div>
-                        <span>Fahad aka Epic</span>
-                    </div>
-                    <span class="action-score">+59.0 pts</span>
-                </div>
-                <div class="action-summary-modern">
-                    Session 1 - You Scored 19, Input: 19 (Phone number change bypass)  Session 2 - You Scored 21,...
-                </div>
-                <div class="action-time-modern">
-                    <i class="fa-regular fa-clock"></i>
-                    2025-09-13 20:23
-                </div>
-            </div>
-            
         </div>
     </section>
 </div>
@@ -392,7 +434,7 @@
 
 
         <footer>
-            <p>Last updated: 2025-09-15 19:16:39</p>
+            <p>Last updated: 2025-09-15 19:38:35</p>
         </footer>
     </div>
     <script src="static/js/script.js"></script>

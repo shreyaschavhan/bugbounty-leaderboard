@@ -41,10 +41,10 @@
     <div class="user-header">
         <div class="user-profile">
             <div class="avatar-large">
-                S
+                A
             </div>
             <div class="user-info">
-                <h2>Shreyas Chavhan</h2>
+                <h2>Abdulhafiz</h2>
                 <p>Member since September 2025</p>
             </div>
         </div>
@@ -54,7 +54,7 @@
                     <i class="fa-solid fa-trophy"></i>
                 </div>
                 <div class="stat-details">
-                    <span class="stat-value">2</span>
+                    <span class="stat-value">4</span>
                     <span class="stat-label">Rank</span>
                 </div>
             </div>
@@ -63,7 +63,7 @@
                     <i class="fa-solid fa-star"></i>
                 </div>
                 <div class="stat-details">
-                    <span class="stat-value">53.5</span>
+                    <span class="stat-value">28.25</span>
                     <span class="stat-label">Total Score</span>
                 </div>
             </div>
@@ -72,7 +72,7 @@
                     <i class="fa-solid fa-fire"></i>
                 </div>
                 <div class="stat-details">
-                    <span class="stat-value">1</span>
+                    <span class="stat-value">0</span>
                     <span class="stat-label">Day Streak</span>
                 </div>
             </div>
@@ -91,7 +91,7 @@
                         <h4>Past Self</h4>
                         <i class="fa-solid fa-clock-rotate-left"></i>
                     </div>
-                    <div class="battle-score">7.6</div>
+                    <div class="battle-score">4.0</div>
                     <p>7-day average</p>
                 </div>
                 
@@ -104,7 +104,7 @@
                         <h4>Present Self</h4>
                         <i class="fa-solid fa-circle"></i>
                     </div>
-                    <div class="battle-score">53.5</div>
+                    <div class="battle-score">0</div>
                     <p>Today's score</p>
                 </div>
                 
@@ -117,7 +117,7 @@
                         <h4>Future Self</h4>
                         <i class="fa-solid fa-rocket"></i>
                     </div>
-                    <div class="battle-score">8.4</div>
+                    <div class="battle-score">4.4</div>
                     <p>Today's goal</p>
                 </div>
             </div>
@@ -147,12 +147,12 @@
                         <div class="action-header-modern">
                             <div class="action-date">
                                 <i class="fa-regular fa-calendar"></i>
-                                2025-09-15 18:43
+                                2025-09-16 00:54
                             </div>
-                            <span class="action-score">+42.0 pts</span>
+                            <span class="action-score">+5.75 pts</span>
                         </div>
                         <div class="action-summary-modern">
-                            I tested total 3 hypothesis in this session. I started retesting the previous week&#39;s lead from scratch as I almost forgot everything. It was the OAuth integration feature. The target had an upload feature where we could upload photos from our google photos account. It was a 3 step process. 1. Connect your google account2. Choose your photo3. The site fetches that photo and upload to your accountThe main thing here is - if the site doesn&#39;t handle the token given by google properly, we can steal someone else&#39;s photos from their google account - which is the highest impact we can achieve here.I tried understanding the flow. Found the token being used in the client side. Then, found a test case where I could test for an IDOR, if it would have worked - i would have got google token for someone else.Then came across the SSRF related endpoint.Need to test it more.
+                            Found an html injection in a programH: The Invite User modal in the program Dashboard may be vulnerable to HTML injection via the &#34;Link to Practitioner&#34; dropdown field.M: Manual testing with a crafted practitioner Display Name containing an HTML payload, later used in the Invite User modal.T: The &#34;Link to Practitioner&#34; dropdown field in the Invite User modal.R: The payload successfully rendered as custom HTML (a large clickable red/yellow banner linking to evil.com).
                         </div>
                     </div>
                     
@@ -160,12 +160,12 @@
                         <div class="action-header-modern">
                             <div class="action-date">
                                 <i class="fa-regular fa-calendar"></i>
-                                2025-09-15 19:46
+                                2025-09-16 00:59
                             </div>
-                            <span class="action-score">+11.5 pts</span>
+                            <span class="action-score">+22.5 pts</span>
                         </div>
                         <div class="action-summary-modern">
-                            Focused more on the SSRF, figured out they are using an old library Jakarta Commons-HttpClient/3.1. This is interesting as the java library is deprecated in 2007. I also see http 1.1, and I saw a talk about http dsync attack, Iâm thinking of how i can use that to my advantage. Also started fuzzing a little to analyze the response for more information on how the functionality might be working.
+                            H: The target platform may be vulnerable to IDOR, allowing unauthorized access to other clinic schedules.M: Used Burp Suite to intercept and modify the clinic_id parameter.T: The clinic_id parameter in schedule-related requests.R: Able to view appointment schedules of other clinics without authorization.
                         </div>
                     </div>
                     
@@ -184,7 +184,7 @@
             labels: ['2025-09-09', '2025-09-10', '2025-09-11', '2025-09-12', '2025-09-13', '2025-09-14', '2025-09-15'],
             datasets: [{
                 label: 'Current Week',
-                data: [0, 0, 0, 0, 0, 0, 53.5],
+                data: [0, 0, 0, 0, 0, 0, 0],
                 borderColor: '#8B5CF6',
                 backgroundColor: 'rgba(139, 92, 246, 0.1)',
                 tension: 0.1,
