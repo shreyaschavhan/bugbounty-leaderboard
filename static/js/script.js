@@ -52,3 +52,27 @@ if (themeToggle) {
         localStorage.setItem('theme', newTheme);
     });
 }
+
+// NEW: Event delegation for action cards
+document.body.addEventListener('click', function(event) {
+    // Traverse the DOM from the clicked element up to find the action card
+    const cardElement = event.target.closest('.action-card-modern');
+    if (cardElement) {
+        // Extract data from attributes
+        const summary = cardElement.dataset.summary;
+        const userName = cardElement.dataset.user;
+        const score = cardElement.dataset.score;
+        const time = cardElement.dataset.time;
+
+        // Call the modal function with the safely extracted data
+        openModal(summary, userName, score, time);
+    }
+});
+
+// NEW: Optional - Add a CSS class to indicate interactivity for better UX
+const style = document.createElement('style');
+style.textContent = `
+    .action-card-modern { cursor: pointer; }
+    .action-card-modern:hover { opacity: 0.9; }
+`;
+document.head.appendChild(style);

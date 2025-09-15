@@ -91,10 +91,10 @@
                             </div>
                             Shreyas Chavhan
                         </td>
-                        <td class="score-value">42.0</td>
+                        <td class="score-value">53.5</td>
                         <td class="action-count">
                             <i class="fa-solid fa-list-check"></i>
-                            1
+                            2
                         </td>
                     </tr>
                     
@@ -166,7 +166,34 @@
         </div>
         <div class="actions-container">
             
-            <div class="action-card-modern" onclick="openModal('The tester formed a clear hypothesis that Insecure Direct Object Reference (IDOR) might be possible by swapping organization identifiers (UUIDs and JWTs) between Organization 1 and Organization 2. Using Burp Suite for one hour, they systematically manipulated UUID and JWT values across all /api/* endpoints to test access control enforcement. Despite extensive parameter tampering and endpoint coverage, no unauthorized access or interesting results were observed. The tester concluded the attack vector was not worth further pursuit and moved on.', 'Kuro', '9.5', '2025-09-15 18:54')">
+            <div class="action-card-modern"
+                 data-summary="Focused more on the SSRF, figured out they are using an old library Jakarta Commons-HttpClient/3.1. This is interesting as the java library is deprecated in 2007. I also see http 1.1, and I saw a talk about http dsync attack, Iâm thinking of how i can use that to my advantage. Also started fuzzing a little to analyze the response for more information on how the functionality might be working."
+                 data-user="Shreyas Chavhan"
+                 data-score="11.5"
+                 data-time="2025-09-15 19:46">
+                <div class="action-header-modern">
+                    <div class="action-user">
+                        <div class="avatar-xs">
+                            S
+                        </div>
+                        <span>Shreyas Chavhan</span>
+                    </div>
+                    <span class="action-score">+11.5 pts</span>
+                </div>
+                <div class="action-summary-modern">
+                    Focused more on the SSRF, figured out they are using an old library Jakarta...
+                </div>
+                <div class="action-time-modern">
+                    <i class="fa-regular fa-clock"></i>
+                    2025-09-15 19:46
+                </div>
+            </div>
+            
+            <div class="action-card-modern"
+                 data-summary="The tester formed a clear hypothesis that Insecure Direct Object Reference (IDOR) might be possible by swapping organization identifiers (UUIDs and JWTs) between Organization 1 and Organization 2. Using Burp Suite for one hour, they systematically manipulated UUID and JWT values across all /api/* endpoints to test access control enforcement. Despite extensive parameter tampering and endpoint coverage, no unauthorized access or interesting results were observed. The tester concluded the attack vector was not worth further pursuit and moved on."
+                 data-user="Kuro"
+                 data-score="9.5"
+                 data-time="2025-09-15 18:54">
                 <div class="action-header-modern">
                     <div class="action-user">
                         <div class="avatar-xs">
@@ -185,7 +212,11 @@
                 </div>
             </div>
             
-            <div class="action-card-modern" onclick="openModal('I tested total 3 hypothesis in this session. I started retesting the previous week&#39;s lead from scratch as I almost forgot everything. It was the OAuth integration feature. The target had an upload feature where we could upload photos from our google photos account. It was a 3 step process. 1. Connect your google account2. Choose your photo3. The site fetches that photo and upload to your accountThe main thing here is - if the site doesn&#39;t handle the token given by google properly, we can steal someone else&#39;s photos from their google account - which is the highest impact we can achieve here.I tried understanding the flow. Found the token being used in the client side. Then, found a test case where I could test for an IDOR, if it would have worked - i would have got google token for someone else.Then came across the SSRF related endpoint.Need to test it more.', 'Shreyas Chavhan', '42.0', '2025-09-15 18:43')">
+            <div class="action-card-modern"
+                 data-summary="I tested total 3 hypothesis in this session. I started retesting the previous week&#39;s lead from scratch as I almost forgot everything. It was the OAuth integration feature. The target had an upload feature where we could upload photos from our google photos account. It was a 3 step process. 1. Connect your google account2. Choose your photo3. The site fetches that photo and upload to your accountThe main thing here is - if the site doesn&#39;t handle the token given by google properly, we can steal someone else&#39;s photos from their google account - which is the highest impact we can achieve here.I tried understanding the flow. Found the token being used in the client side. Then, found a test case where I could test for an IDOR, if it would have worked - i would have got google token for someone else.Then came across the SSRF related endpoint.Need to test it more."
+                 data-user="Shreyas Chavhan"
+                 data-score="42.0"
+                 data-time="2025-09-15 18:43">
                 <div class="action-header-modern">
                     <div class="action-user">
                         <div class="avatar-xs">
@@ -204,7 +235,11 @@
                 </div>
             </div>
             
-            <div class="action-card-modern" onclick="openModal('Tried DOM XSS enabling cookie manipulation then Burp active scan, Arjun, and fuzzing to discover endpoints -  planning/performing JS/static analysis with LinkFinder.  https://target.com/api_key. Burp active scan produced noisy/irrelevant issues; Arjun &amp; fuzzing didn&#39;t find usable endpoints; experiments were performed against the endpoint.', 'Uday', '7.5', '2025-09-15 17:52')">
+            <div class="action-card-modern"
+                 data-summary="Tried DOM XSS enabling cookie manipulation then Burp active scan, Arjun, and fuzzing to discover endpoints -  planning/performing JS/static analysis with LinkFinder.  https://target.com/api_key. Burp active scan produced noisy/irrelevant issues; Arjun &amp; fuzzing didn&#39;t find usable endpoints; experiments were performed against the endpoint."
+                 data-user="Uday"
+                 data-score="7.5"
+                 data-time="2025-09-15 17:52">
                 <div class="action-header-modern">
                     <div class="action-user">
                         <div class="avatar-xs">
@@ -223,7 +258,11 @@
                 </div>
             </div>
             
-            <div class="action-card-modern" onclick="openModal('Performed Recon on the public BBP porsche&#39;s one subdomain by doing directory enumeration and parameter fuzzing used gau, gospider, waybackurls, katana , found html reflection in ?s= query parameter on &lt;u&gt;test123&lt;/u&gt;.Ran dalfox on the parameter and its still working  meanwhile doing manual testing in caido.', 'Shubham Khanna', '6.0', '2025-09-15 15:43')">
+            <div class="action-card-modern"
+                 data-summary="Performed Recon on the public BBP porsche&#39;s one subdomain by doing directory enumeration and parameter fuzzing used gau, gospider, waybackurls, katana , found html reflection in ?s= query parameter on &lt;u&gt;test123&lt;/u&gt;.Ran dalfox on the parameter and its still working  meanwhile doing manual testing in caido."
+                 data-user="Shubham Khanna"
+                 data-score="6.0"
+                 data-time="2025-09-15 15:43">
                 <div class="action-header-modern">
                     <div class="action-user">
                         <div class="avatar-xs">
@@ -242,7 +281,11 @@
                 </div>
             </div>
             
-            <div class="action-card-modern" onclick="openModal('I tried reflected dom xss payloads on chat search history endpoint (?search=) in main application for 1.5hr then saw interesting js files Why interesting?  It has new endpoint where you can&#39;t access from ui, I also got hide js files then I decided to read js files, do js analysis use recon tools like arjun But I postpone to tomorrow', 'Uday', '7.0', '2025-09-14 18:59')">
+            <div class="action-card-modern"
+                 data-summary="I tried reflected dom xss payloads on chat search history endpoint (?search=) in main application for 1.5hr then saw interesting js files Why interesting?  It has new endpoint where you can&#39;t access from ui, I also got hide js files then I decided to read js files, do js analysis use recon tools like arjun But I postpone to tomorrow"
+                 data-user="Uday"
+                 data-score="7.0"
+                 data-time="2025-09-14 18:59">
                 <div class="action-header-modern">
                     <div class="action-user">
                         <div class="avatar-xs">
@@ -261,7 +304,11 @@
                 </div>
             </div>
             
-            <div class="action-card-modern" onclick="openModal('I identified a vulnerability where a workspace admin could favorite metrics of another primary owner without access. Using Caido proxy, I intercepted requests and swapped JWT tokens to impersonate the primary owner', 'Kuro', '17.0', '2025-09-14 16:01')">
+            <div class="action-card-modern"
+                 data-summary="I identified a vulnerability where a workspace admin could favorite metrics of another primary owner without access. Using Caido proxy, I intercepted requests and swapped JWT tokens to impersonate the primary owner"
+                 data-user="Kuro"
+                 data-score="17.0"
+                 data-time="2025-09-14 16:01">
                 <div class="action-header-modern">
                     <div class="action-user">
                         <div class="avatar-xs">
@@ -280,7 +327,11 @@
                 </div>
             </div>
             
-            <div class="action-card-modern" onclick="openModal('Session 1 - You Scored 19, Input: 19 (Phone number change bypass)  Session 2 - You Scored 21, Input: 21 (Developer API key â Org takeover)  Session 3 - You Scored 19, Input: 19 (Chat IDOR via app-chat-id)  Session Total = 59', 'Fahad aka Epic', '59.0', '2025-09-13 20:23')">
+            <div class="action-card-modern"
+                 data-summary="Session 1 - You Scored 19, Input: 19 (Phone number change bypass)  Session 2 - You Scored 21, Input: 21 (Developer API key â Org takeover)  Session 3 - You Scored 19, Input: 19 (Chat IDOR via app-chat-id)  Session Total = 59"
+                 data-user="Fahad aka Epic"
+                 data-score="59.0"
+                 data-time="2025-09-13 20:23">
                 <div class="action-header-modern">
                     <div class="action-user">
                         <div class="avatar-xs">
@@ -318,7 +369,7 @@
 
 
         <footer>
-            <p>Last updated: 2025-09-15 13:44:01</p>
+            <p>Last updated: 2025-09-15 14:22:22</p>
         </footer>
     </div>
     <script src="static/js/script.js"></script>

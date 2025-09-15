@@ -60,7 +60,11 @@
         </div>
         <div class="actions-container">
             {% for action in top_recent_actions %}
-            <div class="action-card-modern" onclick="openModal('{{ action.summary|escape }}', '{{ action.name }}', '{{ action.score }}', '{{ action.timestamp.strftime('%Y-%m-%d %H:%M') }}')">
+            <div class="action-card-modern"
+                 data-summary="{{ action.summary|escape }}"
+                 data-user="{{ action.name|escape }}"
+                 data-score="{{ action.score }}"
+                 data-time="{{ action.timestamp.strftime('%Y-%m-%d %H:%M') }}">
                 <div class="action-header-modern">
                     <div class="action-user">
                         <div class="avatar-xs">

@@ -63,7 +63,7 @@
                     <i class="fa-solid fa-star"></i>
                 </div>
                 <div class="stat-details">
-                    <span class="stat-value">42.0</span>
+                    <span class="stat-value">53.5</span>
                     <span class="stat-label">Total Score</span>
                 </div>
             </div>
@@ -91,7 +91,7 @@
                         <h4>Past Self</h4>
                         <i class="fa-solid fa-clock-rotate-left"></i>
                     </div>
-                    <div class="battle-score">6.0</div>
+                    <div class="battle-score">7.6</div>
                     <p>7-day average</p>
                 </div>
                 
@@ -104,7 +104,7 @@
                         <h4>Present Self</h4>
                         <i class="fa-solid fa-circle"></i>
                     </div>
-                    <div class="battle-score">42.0</div>
+                    <div class="battle-score">53.5</div>
                     <p>Today's score</p>
                 </div>
                 
@@ -117,7 +117,7 @@
                         <h4>Future Self</h4>
                         <i class="fa-solid fa-rocket"></i>
                     </div>
-                    <div class="battle-score">6.6</div>
+                    <div class="battle-score">8.4</div>
                     <p>Today's goal</p>
                 </div>
             </div>
@@ -156,6 +156,19 @@
                         </div>
                     </div>
                     
+                    <div class="action-card-modern user-action">
+                        <div class="action-header-modern">
+                            <div class="action-date">
+                                <i class="fa-regular fa-calendar"></i>
+                                2025-09-15 19:46
+                            </div>
+                            <span class="action-score">+11.5 pts</span>
+                        </div>
+                        <div class="action-summary-modern">
+                            Focused more on the SSRF, figured out they are using an old library Jakarta Commons-HttpClient/3.1. This is interesting as the java library is deprecated in 2007. I also see http 1.1, and I saw a talk about http dsync attack, Iâm thinking of how i can use that to my advantage. Also started fuzzing a little to analyze the response for more information on how the functionality might be working.
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
         </div>
@@ -171,7 +184,7 @@
             labels: ['2025-09-09', '2025-09-10', '2025-09-11', '2025-09-12', '2025-09-13', '2025-09-14', '2025-09-15'],
             datasets: [{
                 label: 'Current Week',
-                data: [0, 0, 0, 0, 0, 0, 42.0],
+                data: [0, 0, 0, 0, 0, 0, 53.5],
                 borderColor: '#8B5CF6',
                 backgroundColor: 'rgba(139, 92, 246, 0.1)',
                 tension: 0.1,
@@ -344,7 +357,7 @@
 
 
         <footer>
-            <p>Last updated: 2025-09-15 13:44:01</p>
+            <p>Last updated: 2025-09-15 14:22:22</p>
         </footer>
     </div>
     <script src="static/js/script.js"></script>
