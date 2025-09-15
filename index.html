@@ -167,10 +167,10 @@
                             </div>
                             Shubham Khanna
                         </td>
-                        <td class="score-value">6.0</td>
+                        <td class="score-value">12.0</td>
                         <td class="action-count">
                             <i class="fa-solid fa-list-check"></i>
-                            1
+                            2
                         </td>
                     </tr>
                     
@@ -184,6 +184,29 @@
             <h2><i class="fa-solid fa-bolt"></i> Recent Deep Actions</h2>
         </div>
         <div class="actions-container">
+            
+            <div class="action-card-modern"
+                 data-summary="I have performed recon on the bug bounty program porsche. did scope analysis and picked another scoped porsche website for further recon. did directory enumeration to find potential vulnerable endpoint and found that its wordpress website and checked wp-config.php, wp-cron.php and xmlrpc.php are directly accessible with http 200 ok. reported bug system misconfiguration for wp-config.php with no content disclosure .xmlrpc is enabled and allows post method . tested pingback.ping method is  disabled. bruteforce test is remaining."
+                 data-user="Shubham Khanna"
+                 data-score="6.0"
+                 data-time="2025-09-16 01:13">
+                <div class="action-header-modern">
+                    <div class="action-user">
+                        <div class="avatar-xs">
+                            S
+                        </div>
+                        <span>Shubham Khanna</span>
+                    </div>
+                    <span class="action-score">+6.0 pts</span>
+                </div>
+                <div class="action-summary-modern">
+                    I have performed recon on the bug bounty program porsche. did scope analysis and picked another...
+                </div>
+                <div class="action-time-modern">
+                    <i class="fa-regular fa-clock"></i>
+                    2025-09-16 01:13
+                </div>
+            </div>
             
             <div class="action-card-modern"
                  data-summary="H: The target platform may be vulnerable to IDOR, allowing unauthorized access to other clinic schedules.M: Used Burp Suite to intercept and modify the clinic_id parameter.T: The clinic_id parameter in schedule-related requests.R: Able to view appointment schedules of other clinics without authorization."
@@ -392,29 +415,6 @@
                 </div>
             </div>
             
-            <div class="action-card-modern"
-                 data-summary="I identified a vulnerability where a workspace admin could favorite metrics of another primary owner without access. Using Caido proxy, I intercepted requests and swapped JWT tokens to impersonate the primary owner"
-                 data-user="Kuro"
-                 data-score="17.0"
-                 data-time="2025-09-14 16:01">
-                <div class="action-header-modern">
-                    <div class="action-user">
-                        <div class="avatar-xs">
-                            K
-                        </div>
-                        <span>Kuro</span>
-                    </div>
-                    <span class="action-score">+17.0 pts</span>
-                </div>
-                <div class="action-summary-modern">
-                    I identified a vulnerability where a workspace admin could favorite metrics of another primary...
-                </div>
-                <div class="action-time-modern">
-                    <i class="fa-regular fa-clock"></i>
-                    2025-09-14 16:01
-                </div>
-            </div>
-            
         </div>
     </section>
 </div>
@@ -434,7 +434,7 @@
 
 
         <footer>
-            <p>Last updated: 2025-09-15 19:38:35</p>
+            <p>Last updated: 2025-09-15 20:23:03</p>
         </footer>
     </div>
     <script src="static/js/script.js"></script>
