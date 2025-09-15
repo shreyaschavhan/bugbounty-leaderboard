@@ -110,10 +110,10 @@
                             </div>
                             Kuro
                         </td>
-                        <td class="score-value">26.5</td>
+                        <td class="score-value">39.5</td>
                         <td class="action-count">
                             <i class="fa-solid fa-list-check"></i>
-                            2
+                            3
                         </td>
                     </tr>
                     
@@ -165,6 +165,29 @@
             <h2><i class="fa-solid fa-bolt"></i> Recent Deep Actions</h2>
         </div>
         <div class="actions-container">
+            
+            <div class="action-card-modern"
+                 data-summary="In this session, the tester investigated an IDOR-like vulnerability within an organizationâs multi-builder setup. The hypothesis was that a builder-level account in org1 might be able to tamper with or impact another builder accountâs resources.Using Caido for traffic inspection and manual request manipulation, the tester took requests originating from a builder1 application and modified both the JWT token and CSRF token to values belonging to builder2. Despite documentation explicitly stating that âno one can act without joining the application,â the tester observed that builder2 could delete builder1âs favorites folder, demonstrating unauthorized cross-account access."
+                 data-user="Kuro"
+                 data-score="13.0"
+                 data-time="2025-09-16 00:11">
+                <div class="action-header-modern">
+                    <div class="action-user">
+                        <div class="avatar-xs">
+                            K
+                        </div>
+                        <span>Kuro</span>
+                    </div>
+                    <span class="action-score">+13.0 pts</span>
+                </div>
+                <div class="action-summary-modern">
+                    In this session, the tester investigated an IDOR-like vulnerability within an organizationâs...
+                </div>
+                <div class="action-time-modern">
+                    <i class="fa-regular fa-clock"></i>
+                    2025-09-16 00:11
+                </div>
+            </div>
             
             <div class="action-card-modern"
                  data-summary="Focused more on the SSRF, figured out they are using an old library Jakarta Commons-HttpClient/3.1. This is interesting as the java library is deprecated in 2007. I also see http 1.1, and I saw a talk about http dsync attack, Iâm thinking of how i can use that to my advantage. Also started fuzzing a little to analyze the response for more information on how the functionality might be working."
@@ -369,7 +392,7 @@
 
 
         <footer>
-            <p>Last updated: 2025-09-15 18:31:06</p>
+            <p>Last updated: 2025-09-15 19:16:39</p>
         </footer>
     </div>
     <script src="static/js/script.js"></script>
