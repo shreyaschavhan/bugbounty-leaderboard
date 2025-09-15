@@ -39,7 +39,7 @@
         
 <div class="competition-status">
     <div class="status-pill">
-        <span>🏆 4 Contributors Tracking</span>
+        <span>🏆 5 Contributors Tracking</span>
     </div>
 </div>
 
@@ -64,7 +64,7 @@
                     
                         
                     
-                    <tr class="tier-2" onclick="window.location='users/user_fahad_aka_epic.html';">
+                    <tr class="tier-1" onclick="window.location='users/user_fahad_aka_epic.html';">
                         <td class="rank">1</td>
                         <td class="user-name">
                             <div class="avatar-small">
@@ -83,15 +83,15 @@
                     
                         
                     
-                    <tr class="tier-2" onclick="window.location='users/user_kuro.html';">
+                    <tr class="tier-2" onclick="window.location='users/user_shreyas_chavhan.html';">
                         <td class="rank">2</td>
                         <td class="user-name">
                             <div class="avatar-small">
-                                K
+                                S
                             </div>
-                            Kuro
+                            Shreyas Chavhan
                         </td>
-                        <td class="score-value">17.0</td>
+                        <td class="score-value">42.0</td>
                         <td class="action-count">
                             <i class="fa-solid fa-list-check"></i>
                             1
@@ -102,8 +102,27 @@
                     
                         
                     
-                    <tr class="tier-3" onclick="window.location='users/user_uday.html';">
+                    <tr class="tier-3" onclick="window.location='users/user_kuro.html';">
                         <td class="rank">3</td>
+                        <td class="user-name">
+                            <div class="avatar-small">
+                                K
+                            </div>
+                            Kuro
+                        </td>
+                        <td class="score-value">26.5</td>
+                        <td class="action-count">
+                            <i class="fa-solid fa-list-check"></i>
+                            2
+                        </td>
+                    </tr>
+                    
+                    
+                    
+                        
+                    
+                    <tr class="tier-3" onclick="window.location='users/user_uday.html';">
+                        <td class="rank">4</td>
                         <td class="user-name">
                             <div class="avatar-small">
                                 U
@@ -122,7 +141,7 @@
                         
                     
                     <tr class="tier-4" onclick="window.location='users/user_shubham_khanna.html';">
-                        <td class="rank">4</td>
+                        <td class="rank">5</td>
                         <td class="user-name">
                             <div class="avatar-small">
                                 S
@@ -146,6 +165,44 @@
             <h2><i class="fa-solid fa-bolt"></i> Recent Deep Actions</h2>
         </div>
         <div class="actions-container">
+            
+            <div class="action-card-modern" onclick="openModal('The tester formed a clear hypothesis that Insecure Direct Object Reference (IDOR) might be possible by swapping organization identifiers (UUIDs and JWTs) between Organization 1 and Organization 2. Using Burp Suite for one hour, they systematically manipulated UUID and JWT values across all /api/* endpoints to test access control enforcement. Despite extensive parameter tampering and endpoint coverage, no unauthorized access or interesting results were observed. The tester concluded the attack vector was not worth further pursuit and moved on.', 'Kuro', '9.5', '2025-09-15 18:54')">
+                <div class="action-header-modern">
+                    <div class="action-user">
+                        <div class="avatar-xs">
+                            K
+                        </div>
+                        <span>Kuro</span>
+                    </div>
+                    <span class="action-score">+9.5 pts</span>
+                </div>
+                <div class="action-summary-modern">
+                    The tester formed a clear hypothesis that Insecure Direct Object Reference (IDOR) might be...
+                </div>
+                <div class="action-time-modern">
+                    <i class="fa-regular fa-clock"></i>
+                    2025-09-15 18:54
+                </div>
+            </div>
+            
+            <div class="action-card-modern" onclick="openModal('I tested total 3 hypothesis in this session. I started retesting the previous week&#39;s lead from scratch as I almost forgot everything. It was the OAuth integration feature. The target had an upload feature where we could upload photos from our google photos account. It was a 3 step process. 1. Connect your google account2. Choose your photo3. The site fetches that photo and upload to your accountThe main thing here is - if the site doesn&#39;t handle the token given by google properly, we can steal someone else&#39;s photos from their google account - which is the highest impact we can achieve here.I tried understanding the flow. Found the token being used in the client side. Then, found a test case where I could test for an IDOR, if it would have worked - i would have got google token for someone else.Then came across the SSRF related endpoint.Need to test it more.', 'Shreyas Chavhan', '42.0', '2025-09-15 18:43')">
+                <div class="action-header-modern">
+                    <div class="action-user">
+                        <div class="avatar-xs">
+                            S
+                        </div>
+                        <span>Shreyas Chavhan</span>
+                    </div>
+                    <span class="action-score">+42.0 pts</span>
+                </div>
+                <div class="action-summary-modern">
+                    I tested total 3 hypothesis in this session. I started retesting the previous week&#39;s lead...
+                </div>
+                <div class="action-time-modern">
+                    <i class="fa-regular fa-clock"></i>
+                    2025-09-15 18:43
+                </div>
+            </div>
             
             <div class="action-card-modern" onclick="openModal('Tried DOM XSS enabling cookie manipulation then Burp active scan, Arjun, and fuzzing to discover endpoints -  planning/performing JS/static analysis with LinkFinder.  https://target.com/api_key. Burp active scan produced noisy/irrelevant issues; Arjun &amp; fuzzing didn&#39;t find usable endpoints; experiments were performed against the endpoint.', 'Uday', '7.5', '2025-09-15 17:52')">
                 <div class="action-header-modern">
@@ -261,7 +318,7 @@
 
 
         <footer>
-            <p>Last updated: 2025-09-15 12:45:38</p>
+            <p>Last updated: 2025-09-15 13:29:01</p>
         </footer>
     </div>
     <script src="static/js/script.js"></script>

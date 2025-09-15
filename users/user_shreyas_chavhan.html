@@ -44,7 +44,7 @@
                 S
             </div>
             <div class="user-info">
-                <h2>Shubham Khanna</h2>
+                <h2>Shreyas Chavhan</h2>
                 <p>Member since September 2025</p>
             </div>
         </div>
@@ -54,7 +54,7 @@
                     <i class="fa-solid fa-trophy"></i>
                 </div>
                 <div class="stat-details">
-                    <span class="stat-value">5</span>
+                    <span class="stat-value">2</span>
                     <span class="stat-label">Rank</span>
                 </div>
             </div>
@@ -63,7 +63,7 @@
                     <i class="fa-solid fa-star"></i>
                 </div>
                 <div class="stat-details">
-                    <span class="stat-value">6.0</span>
+                    <span class="stat-value">42.0</span>
                     <span class="stat-label">Total Score</span>
                 </div>
             </div>
@@ -91,7 +91,7 @@
                         <h4>Past Self</h4>
                         <i class="fa-solid fa-clock-rotate-left"></i>
                     </div>
-                    <div class="battle-score">0.9</div>
+                    <div class="battle-score">6.0</div>
                     <p>7-day average</p>
                 </div>
                 
@@ -104,7 +104,7 @@
                         <h4>Present Self</h4>
                         <i class="fa-solid fa-circle"></i>
                     </div>
-                    <div class="battle-score">6.0</div>
+                    <div class="battle-score">42.0</div>
                     <p>Today's score</p>
                 </div>
                 
@@ -117,7 +117,7 @@
                         <h4>Future Self</h4>
                         <i class="fa-solid fa-rocket"></i>
                     </div>
-                    <div class="battle-score">0.9</div>
+                    <div class="battle-score">6.6</div>
                     <p>Today's goal</p>
                 </div>
             </div>
@@ -147,12 +147,12 @@
                         <div class="action-header-modern">
                             <div class="action-date">
                                 <i class="fa-regular fa-calendar"></i>
-                                2025-09-15 15:43
+                                2025-09-15 18:43
                             </div>
-                            <span class="action-score">+6.0 pts</span>
+                            <span class="action-score">+42.0 pts</span>
                         </div>
                         <div class="action-summary-modern">
-                            Performed Recon on the public BBP porsche&#39;s one subdomain by doing directory enumeration and parameter fuzzing used gau, gospider, waybackurls, katana , found html reflection in ?s= query parameter on &lt;u&gt;test123&lt;/u&gt;.Ran dalfox on the parameter and its still working  meanwhile doing manual testing in caido.
+                            I tested total 3 hypothesis in this session. I started retesting the previous week&#39;s lead from scratch as I almost forgot everything. It was the OAuth integration feature. The target had an upload feature where we could upload photos from our google photos account. It was a 3 step process. 1. Connect your google account2. Choose your photo3. The site fetches that photo and upload to your accountThe main thing here is - if the site doesn&#39;t handle the token given by google properly, we can steal someone else&#39;s photos from their google account - which is the highest impact we can achieve here.I tried understanding the flow. Found the token being used in the client side. Then, found a test case where I could test for an IDOR, if it would have worked - i would have got google token for someone else.Then came across the SSRF related endpoint.Need to test it more.
                         </div>
                     </div>
                     
@@ -171,7 +171,7 @@
             labels: ['2025-09-09', '2025-09-10', '2025-09-11', '2025-09-12', '2025-09-13', '2025-09-14', '2025-09-15'],
             datasets: [{
                 label: 'Current Week',
-                data: [0, 0, 0, 0, 0, 0, 6.0],
+                data: [0, 0, 0, 0, 0, 0, 42.0],
                 borderColor: '#8B5CF6',
                 backgroundColor: 'rgba(139, 92, 246, 0.1)',
                 tension: 0.1,
