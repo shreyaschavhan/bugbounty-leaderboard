@@ -64,8 +64,27 @@
                     
                         
                     
-                    <tr class="tier-1" onclick="window.location='users/user_fahad_aka_epic.html';">
+                    <tr class="tier-1" onclick="window.location='users/user_shreyas_chavhan.html';">
                         <td class="rank">1</td>
+                        <td class="user-name">
+                            <div class="avatar-small">
+                                S
+                            </div>
+                            Shreyas Chavhan
+                        </td>
+                        <td class="score-value">77.5</td>
+                        <td class="action-count">
+                            <i class="fa-solid fa-list-check"></i>
+                            3
+                        </td>
+                    </tr>
+                    
+                    
+                    
+                        
+                    
+                    <tr class="tier-2" onclick="window.location='users/user_fahad_aka_epic.html';">
+                        <td class="rank">2</td>
                         <td class="user-name">
                             <div class="avatar-small">
                                 F
@@ -76,25 +95,6 @@
                         <td class="action-count">
                             <i class="fa-solid fa-list-check"></i>
                             1
-                        </td>
-                    </tr>
-                    
-                    
-                    
-                        
-                    
-                    <tr class="tier-2" onclick="window.location='users/user_shreyas_chavhan.html';">
-                        <td class="rank">2</td>
-                        <td class="user-name">
-                            <div class="avatar-small">
-                                S
-                            </div>
-                            Shreyas Chavhan
-                        </td>
-                        <td class="score-value">53.5</td>
-                        <td class="action-count">
-                            <i class="fa-solid fa-list-check"></i>
-                            2
                         </td>
                     </tr>
                     
@@ -184,6 +184,29 @@
             <h2><i class="fa-solid fa-bolt"></i> Recent Deep Actions</h2>
         </div>
         <div class="actions-container">
+            
+            <div class="action-card-modern"
+                 data-summary="Nailed down by going deep on yesterdays SSRF lead. Found an interesting behavior to go deep into."
+                 data-user="Shreyas Chavhan"
+                 data-score="24.0"
+                 data-time="2025-09-16 17:29">
+                <div class="action-header-modern">
+                    <div class="action-user">
+                        <div class="avatar-xs">
+                            S
+                        </div>
+                        <span>Shreyas Chavhan</span>
+                    </div>
+                    <span class="action-score">+24.0 pts</span>
+                </div>
+                <div class="action-summary-modern">
+                    Nailed down by going deep on yesterdays SSRF lead. Found an interesting behavior to go deep into.
+                </div>
+                <div class="action-time-modern">
+                    <i class="fa-regular fa-clock"></i>
+                    2025-09-16 17:29
+                </div>
+            </div>
             
             <div class="action-card-modern"
                  data-summary="I have performed recon on the bug bounty program porsche. did scope analysis and picked another scoped porsche website for further recon. did directory enumeration to find potential vulnerable endpoint and found that its wordpress website and checked wp-config.php, wp-cron.php and xmlrpc.php are directly accessible with http 200 ok. reported bug system misconfiguration for wp-config.php with no content disclosure .xmlrpc is enabled and allows post method . tested pingback.ping method is  disabled. bruteforce test is remaining."
@@ -392,29 +415,6 @@
                 </div>
             </div>
             
-            <div class="action-card-modern"
-                 data-summary="I tried reflected dom xss payloads on chat search history endpoint (?search=) in main application for 1.5hr then saw interesting js files Why interesting?  It has new endpoint where you can&#39;t access from ui, I also got hide js files then I decided to read js files, do js analysis use recon tools like arjun But I postpone to tomorrow"
-                 data-user="Uday"
-                 data-score="7.0"
-                 data-time="2025-09-14 18:59">
-                <div class="action-header-modern">
-                    <div class="action-user">
-                        <div class="avatar-xs">
-                            U
-                        </div>
-                        <span>Uday</span>
-                    </div>
-                    <span class="action-score">+7.0 pts</span>
-                </div>
-                <div class="action-summary-modern">
-                    I tried reflected dom xss payloads on chat search history endpoint (?search=) in main...
-                </div>
-                <div class="action-time-modern">
-                    <i class="fa-regular fa-clock"></i>
-                    2025-09-14 18:59
-                </div>
-            </div>
-            
         </div>
     </section>
 </div>
@@ -434,7 +434,7 @@
 
 
         <footer>
-            <p>Last updated: 2025-09-16 11:38:47</p>
+            <p>Last updated: 2025-09-16 12:44:28</p>
         </footer>
     </div>
     <script src="static/js/script.js"></script>
