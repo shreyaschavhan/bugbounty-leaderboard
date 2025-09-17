@@ -121,8 +121,27 @@
                     
                         
                     
-                    <tr class="tier-3" onclick="window.location='users/user_abdulhafiz.html';">
+                    <tr class="tier-3" onclick="window.location='users/user_shubham_khanna.html';">
                         <td class="rank">4</td>
+                        <td class="user-name">
+                            <div class="avatar-small">
+                                S
+                            </div>
+                            Shubham Khanna
+                        </td>
+                        <td class="score-value">34.5</td>
+                        <td class="action-count">
+                            <i class="fa-solid fa-list-check"></i>
+                            5
+                        </td>
+                    </tr>
+                    
+                    
+                    
+                        
+                    
+                    <tr class="tier-3" onclick="window.location='users/user_abdulhafiz.html';">
+                        <td class="rank">5</td>
                         <td class="user-name">
                             <div class="avatar-small">
                                 A
@@ -133,25 +152,6 @@
                         <td class="action-count">
                             <i class="fa-solid fa-list-check"></i>
                             2
-                        </td>
-                    </tr>
-                    
-                    
-                    
-                        
-                    
-                    <tr class="tier-3" onclick="window.location='users/user_shubham_khanna.html';">
-                        <td class="rank">5</td>
-                        <td class="user-name">
-                            <div class="avatar-small">
-                                S
-                            </div>
-                            Shubham Khanna
-                        </td>
-                        <td class="score-value">22.5</td>
-                        <td class="action-count">
-                            <i class="fa-solid fa-list-check"></i>
-                            4
                         </td>
                     </tr>
                     
@@ -203,6 +203,29 @@
             <h2><i class="fa-solid fa-bolt"></i> Recent Deep Actions</h2>
         </div>
         <div class="actions-container">
+            
+            <div class="action-card-modern"
+                 data-summary="checked deep in js files found  on target in yesterday&#39;s session with potential sensitive info. Took closer look in redacted js file, Js revealed refresh_token:i, refresh_token:t, and multiple CLIENT_ID values. At first, these looked like possible secrets but after digging deeper, it turned out they were just internal variable names and static ids, not real tokens or secrets."
+                 data-user="Shubham Khanna"
+                 data-score="12.0"
+                 data-time="2025-09-18 03:27">
+                <div class="action-header-modern">
+                    <div class="action-user">
+                        <div class="avatar-xs">
+                            S
+                        </div>
+                        <span>Shubham Khanna</span>
+                    </div>
+                    <span class="action-score">+12.0 pts</span>
+                </div>
+                <div class="action-summary-modern">
+                    checked deep in js files found  on target in yesterday&#39;s session with potential sensitive...
+                </div>
+                <div class="action-time-modern">
+                    <i class="fa-regular fa-clock"></i>
+                    2025-09-18 03:27
+                </div>
+            </div>
             
             <div class="action-card-modern"
                  data-summary="yesterday i test RBAC by checking every role and identifying its limitations, mapping the entire application to see what actions are possible with each role. and so far I have a good understanding of the roles. Today, I plan to continue testing RBAC."
@@ -411,29 +434,6 @@
                 </div>
             </div>
             
-            <div class="action-card-modern"
-                 data-summary="The tester formed a clear hypothesis that Insecure Direct Object Reference (IDOR) might be possible by swapping organization identifiers (UUIDs and JWTs) between Organization 1 and Organization 2. Using Burp Suite for one hour, they systematically manipulated UUID and JWT values across all /api/* endpoints to test access control enforcement. Despite extensive parameter tampering and endpoint coverage, no unauthorized access or interesting results were observed. The tester concluded the attack vector was not worth further pursuit and moved on."
-                 data-user="Kuro"
-                 data-score="9.5"
-                 data-time="2025-09-15 18:54">
-                <div class="action-header-modern">
-                    <div class="action-user">
-                        <div class="avatar-xs">
-                            K
-                        </div>
-                        <span>Kuro</span>
-                    </div>
-                    <span class="action-score">+9.5 pts</span>
-                </div>
-                <div class="action-summary-modern">
-                    The tester formed a clear hypothesis that Insecure Direct Object Reference (IDOR) might be...
-                </div>
-                <div class="action-time-modern">
-                    <i class="fa-regular fa-clock"></i>
-                    2025-09-15 18:54
-                </div>
-            </div>
-            
         </div>
     </section>
 </div>
@@ -453,7 +453,7 @@
 
 
         <footer>
-            <p>Last updated: 2025-09-17 21:38:28</p>
+            <p>Last updated: 2025-09-17 22:18:17</p>
         </footer>
     </div>
     <script src="static/js/script.js"></script>
