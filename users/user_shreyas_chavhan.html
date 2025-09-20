@@ -63,7 +63,7 @@
                     <i class="fa-solid fa-star"></i>
                 </div>
                 <div class="stat-details">
-                    <span class="stat-value">263.0</span>
+                    <span class="stat-value">283.0</span>
                     <span class="stat-label">Total Score</span>
                 </div>
             </div>
@@ -72,7 +72,7 @@
                     <i class="fa-solid fa-fire"></i>
                 </div>
                 <div class="stat-details">
-                    <span class="stat-value">0</span>
+                    <span class="stat-value">3</span>
                     <span class="stat-label">Day Streak</span>
                 </div>
             </div>
@@ -91,7 +91,7 @@
                         <h4>Past Self</h4>
                         <i class="fa-solid fa-clock-rotate-left"></i>
                     </div>
-                    <div class="battle-score">37.6</div>
+                    <div class="battle-score">40.4</div>
                     <p>7-day average</p>
                 </div>
                 
@@ -104,7 +104,7 @@
                         <h4>Present Self</h4>
                         <i class="fa-solid fa-circle"></i>
                     </div>
-                    <div class="battle-score">0</div>
+                    <div class="battle-score">20.0</div>
                     <p>Today's score</p>
                 </div>
                 
@@ -117,7 +117,7 @@
                         <h4>Future Self</h4>
                         <i class="fa-solid fa-rocket"></i>
                     </div>
-                    <div class="battle-score">41.3</div>
+                    <div class="battle-score">44.5</div>
                     <p>Today's goal</p>
                 </div>
             </div>
@@ -147,12 +147,12 @@
                         <div class="action-header-modern">
                             <div class="action-date">
                                 <i class="fa-regular fa-calendar"></i>
-                                2025-09-15 18:43
+                                2025-09-20 14:59
                             </div>
-                            <span class="action-score">+42.0 pts</span>
+                            <span class="action-score">+20.0 pts</span>
                         </div>
                         <div class="action-summary-modern">
-                            I tested total 3 hypothesis in this session. I started retesting the previous week&#39;s lead from scratch as I almost forgot everything. It was the OAuth integration feature. The target had an upload feature where we could upload photos from our google photos account. It was a 3 step process. 1. Connect your google account2. Choose your photo3. The site fetches that photo and upload to your accountThe main thing here is - if the site doesn&#39;t handle the token given by google properly, we can steal someone else&#39;s photos from their google account - which is the highest impact we can achieve here.I tried understanding the flow. Found the token being used in the client side. Then, found a test case where I could test for an IDOR, if it would have worked - i would have got google token for someone else.Then came across the SSRF related endpoint.Need to test it more.
+                            2 test cases. 1 final fuzzing with almost 2800+ payloads. 2nd - tried to comment a url to shared albums to check what&#39;ll happen.  Was going to report this SSRF because I reached the deadend, saw the scope and found that internal network mapping is out of scope. I need to demonsrate impact, hence the 1st final fuzzing to get /favicon.ico
                         </div>
                     </div>
                     
@@ -160,64 +160,12 @@
                         <div class="action-header-modern">
                             <div class="action-date">
                                 <i class="fa-regular fa-calendar"></i>
-                                2025-09-15 19:46
+                                2025-09-19 20:59
                             </div>
-                            <span class="action-score">+11.5 pts</span>
+                            <span class="action-score">+10.5 pts</span>
                         </div>
                         <div class="action-summary-modern">
-                            Focused more on the SSRF, figured out they are using an old library Jakarta Commons-HttpClient/3.1. This is interesting as the java library is deprecated in 2007. I also see http 1.1, and I saw a talk about http dsync attack, Iâm thinking of how i can use that to my advantage. Also started fuzzing a little to analyze the response for more information on how the functionality might be working.
-                        </div>
-                    </div>
-                    
-                    <div class="action-card-modern user-action">
-                        <div class="action-header-modern">
-                            <div class="action-date">
-                                <i class="fa-regular fa-calendar"></i>
-                                2025-09-16 17:29
-                            </div>
-                            <span class="action-score">+24.0 pts</span>
-                        </div>
-                        <div class="action-summary-modern">
-                            Nailed down by going deep on yesterdays SSRF lead. Found an interesting behavior to go deep into.
-                        </div>
-                    </div>
-                    
-                    <div class="action-card-modern user-action">
-                        <div class="action-header-modern">
-                            <div class="action-date">
-                                <i class="fa-regular fa-calendar"></i>
-                                2025-09-18 15:23
-                            </div>
-                            <span class="action-score">+50.5 pts</span>
-                        </div>
-                        <div class="action-summary-modern">
-                            Dug Deeper into the SSRF behavior, total 2 test cases. Figured 3 ways forward to this behavior. Gotta research deeper, feels suspicious.
-                        </div>
-                    </div>
-                    
-                    <div class="action-card-modern user-action">
-                        <div class="action-header-modern">
-                            <div class="action-date">
-                                <i class="fa-regular fa-calendar"></i>
-                                2025-09-18 18:28
-                            </div>
-                            <span class="action-score">+57.0 pts</span>
-                        </div>
-                        <div class="action-summary-modern">
-                            Almost close to an SSRF. Total 7 test cases.
-                        </div>
-                    </div>
-                    
-                    <div class="action-card-modern user-action">
-                        <div class="action-header-modern">
-                            <div class="action-date">
-                                <i class="fa-regular fa-calendar"></i>
-                                2025-09-18 19:21
-                            </div>
-                            <span class="action-score">+19.0 pts</span>
-                        </div>
-                        <div class="action-summary-modern">
-                            Tested for how the application behave for different IPs &amp; ports.
+                            Tried bypass with that redrection CVE, weird behavior but no lead so far.
                         </div>
                     </div>
                     
@@ -238,12 +186,77 @@
                         <div class="action-header-modern">
                             <div class="action-date">
                                 <i class="fa-regular fa-calendar"></i>
-                                2025-09-19 20:59
+                                2025-09-18 19:21
                             </div>
-                            <span class="action-score">+10.5 pts</span>
+                            <span class="action-score">+19.0 pts</span>
                         </div>
                         <div class="action-summary-modern">
-                            Tried bypass with that redrection CVE, weird behavior but no lead so far.
+                            Tested for how the application behave for different IPs &amp; ports.
+                        </div>
+                    </div>
+                    
+                    <div class="action-card-modern user-action">
+                        <div class="action-header-modern">
+                            <div class="action-date">
+                                <i class="fa-regular fa-calendar"></i>
+                                2025-09-18 18:28
+                            </div>
+                            <span class="action-score">+57.0 pts</span>
+                        </div>
+                        <div class="action-summary-modern">
+                            Almost close to an SSRF. Total 7 test cases.
+                        </div>
+                    </div>
+                    
+                    <div class="action-card-modern user-action">
+                        <div class="action-header-modern">
+                            <div class="action-date">
+                                <i class="fa-regular fa-calendar"></i>
+                                2025-09-18 15:23
+                            </div>
+                            <span class="action-score">+50.5 pts</span>
+                        </div>
+                        <div class="action-summary-modern">
+                            Dug Deeper into the SSRF behavior, total 2 test cases. Figured 3 ways forward to this behavior. Gotta research deeper, feels suspicious.
+                        </div>
+                    </div>
+                    
+                    <div class="action-card-modern user-action">
+                        <div class="action-header-modern">
+                            <div class="action-date">
+                                <i class="fa-regular fa-calendar"></i>
+                                2025-09-16 17:29
+                            </div>
+                            <span class="action-score">+24.0 pts</span>
+                        </div>
+                        <div class="action-summary-modern">
+                            Nailed down by going deep on yesterdays SSRF lead. Found an interesting behavior to go deep into.
+                        </div>
+                    </div>
+                    
+                    <div class="action-card-modern user-action">
+                        <div class="action-header-modern">
+                            <div class="action-date">
+                                <i class="fa-regular fa-calendar"></i>
+                                2025-09-15 19:46
+                            </div>
+                            <span class="action-score">+11.5 pts</span>
+                        </div>
+                        <div class="action-summary-modern">
+                            Focused more on the SSRF, figured out they are using an old library Jakarta Commons-HttpClient/3.1. This is interesting as the java library is deprecated in 2007. I also see http 1.1, and I saw a talk about http dsync attack, Iâm thinking of how i can use that to my advantage. Also started fuzzing a little to analyze the response for more information on how the functionality might be working.
+                        </div>
+                    </div>
+                    
+                    <div class="action-card-modern user-action">
+                        <div class="action-header-modern">
+                            <div class="action-date">
+                                <i class="fa-regular fa-calendar"></i>
+                                2025-09-15 18:43
+                            </div>
+                            <span class="action-score">+42.0 pts</span>
+                        </div>
+                        <div class="action-summary-modern">
+                            I tested total 3 hypothesis in this session. I started retesting the previous week&#39;s lead from scratch as I almost forgot everything. It was the OAuth integration feature. The target had an upload feature where we could upload photos from our google photos account. It was a 3 step process. 1. Connect your google account2. Choose your photo3. The site fetches that photo and upload to your accountThe main thing here is - if the site doesn&#39;t handle the token given by google properly, we can steal someone else&#39;s photos from their google account - which is the highest impact we can achieve here.I tried understanding the flow. Found the token being used in the client side. Then, found a test case where I could test for an IDOR, if it would have worked - i would have got google token for someone else.Then came across the SSRF related endpoint.Need to test it more.
                         </div>
                     </div>
                     
@@ -262,7 +275,7 @@
             labels: ['2025-09-14', '2025-09-15', '2025-09-16', '2025-09-17', '2025-09-18', '2025-09-19', '2025-09-20'],
             datasets: [{
                 label: 'Current Week',
-                data: [0, 53.5, 24.0, 0, 126.5, 59.0, 0],
+                data: [0, 53.5, 24.0, 0, 126.5, 59.0, 20.0],
                 borderColor: '#8B5CF6',
                 backgroundColor: 'rgba(139, 92, 246, 0.1)',
                 tension: 0.1,
@@ -435,7 +448,7 @@
 
 
         <footer>
-            <p>Last updated: 2025-09-20 09:19:41</p>
+            <p>Last updated: 2025-09-20 09:38:20</p>
         </footer>
     </div>
     <script src="static/js/script.js"></script>

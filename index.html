@@ -72,10 +72,10 @@
                             </div>
                             Shreyas Chavhan
                         </td>
-                        <td class="score-value">263.0</td>
+                        <td class="score-value">283.0</td>
                         <td class="action-count">
                             <i class="fa-solid fa-list-check"></i>
-                            8
+                            9
                         </td>
                     </tr>
                     
@@ -102,27 +102,8 @@
                     
                         
                     
-                    <tr class="tier-2" onclick="window.location='users/user_kuro.html';">
+                    <tr class="tier-2" onclick="window.location='users/user_shubham_khanna.html';">
                         <td class="rank">3</td>
-                        <td class="user-name">
-                            <div class="avatar-small">
-                                K
-                            </div>
-                            Kuro
-                        </td>
-                        <td class="score-value">39.5</td>
-                        <td class="action-count">
-                            <i class="fa-solid fa-list-check"></i>
-                            3
-                        </td>
-                    </tr>
-                    
-                    
-                    
-                        
-                    
-                    <tr class="tier-3" onclick="window.location='users/user_shubham_khanna.html';">
-                        <td class="rank">4</td>
                         <td class="user-name">
                             <div class="avatar-small">
                                 S
@@ -133,6 +114,25 @@
                         <td class="action-count">
                             <i class="fa-solid fa-list-check"></i>
                             6
+                        </td>
+                    </tr>
+                    
+                    
+                    
+                        
+                    
+                    <tr class="tier-3" onclick="window.location='users/user_kuro.html';">
+                        <td class="rank">4</td>
+                        <td class="user-name">
+                            <div class="avatar-small">
+                                K
+                            </div>
+                            Kuro
+                        </td>
+                        <td class="score-value">39.5</td>
+                        <td class="action-count">
+                            <i class="fa-solid fa-list-check"></i>
+                            3
                         </td>
                     </tr>
                     
@@ -203,6 +203,29 @@
             <h2><i class="fa-solid fa-bolt"></i> Recent Deep Actions</h2>
         </div>
         <div class="actions-container">
+            
+            <div class="action-card-modern"
+                 data-summary="2 test cases. 1 final fuzzing with almost 2800+ payloads. 2nd - tried to comment a url to shared albums to check what&#39;ll happen.  Was going to report this SSRF because I reached the deadend, saw the scope and found that internal network mapping is out of scope. I need to demonsrate impact, hence the 1st final fuzzing to get /favicon.ico"
+                 data-user="Shreyas Chavhan"
+                 data-score="20.0"
+                 data-time="2025-09-20 14:59">
+                <div class="action-header-modern">
+                    <div class="action-user">
+                        <div class="avatar-xs">
+                            S
+                        </div>
+                        <span>Shreyas Chavhan</span>
+                    </div>
+                    <span class="action-score">+20.0 pts</span>
+                </div>
+                <div class="action-summary-modern">
+                    2 test cases. 1 final fuzzing with almost 2800+ payloads. 2nd - tried to comment a url to shared...
+                </div>
+                <div class="action-time-modern">
+                    <i class="fa-regular fa-clock"></i>
+                    2025-09-20 14:59
+                </div>
+            </div>
             
             <div class="action-card-modern"
                  data-summary="Recon on new wildcard Target with subfinder, gobuster,katana, caido, google dorking. Found exposed old Swagger UI file."
@@ -411,29 +434,6 @@
                 </div>
             </div>
             
-            <div class="action-card-modern"
-                 data-summary="Recon done on target with nikto,nuclei,gobuster and katana fuzzing.Found some potential vulnerable parameter -  no XSS reflected or sqli so far while doing manual tests.next step is to do obfuscation on xss payloads.Found few JS endpoint with potential sensitive information."
-                 data-user="Shubham Khanna"
-                 data-score="5.0"
-                 data-time="2025-09-17 01:09">
-                <div class="action-header-modern">
-                    <div class="action-user">
-                        <div class="avatar-xs">
-                            S
-                        </div>
-                        <span>Shubham Khanna</span>
-                    </div>
-                    <span class="action-score">+5.0 pts</span>
-                </div>
-                <div class="action-summary-modern">
-                    Recon done on target with nikto,nuclei,gobuster and katana fuzzing.Found some potential...
-                </div>
-                <div class="action-time-modern">
-                    <i class="fa-regular fa-clock"></i>
-                    2025-09-17 01:09
-                </div>
-            </div>
-            
         </div>
     </section>
 </div>
@@ -453,7 +453,7 @@
 
 
         <footer>
-            <p>Last updated: 2025-09-20 09:19:41</p>
+            <p>Last updated: 2025-09-20 09:38:20</p>
         </footer>
     </div>
     <script src="static/js/script.js"></script>

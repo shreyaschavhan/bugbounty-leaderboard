@@ -147,12 +147,12 @@
                         <div class="action-header-modern">
                             <div class="action-date">
                                 <i class="fa-regular fa-calendar"></i>
-                                2025-09-16 00:54
+                                2025-09-16 00:59
                             </div>
-                            <span class="action-score">+5.75 pts</span>
+                            <span class="action-score">+22.5 pts</span>
                         </div>
                         <div class="action-summary-modern">
-                            Found an html injection in a programH: The Invite User modal in the program Dashboard may be vulnerable to HTML injection via the &#34;Link to Practitioner&#34; dropdown field.M: Manual testing with a crafted practitioner Display Name containing an HTML payload, later used in the Invite User modal.T: The &#34;Link to Practitioner&#34; dropdown field in the Invite User modal.R: The payload successfully rendered as custom HTML (a large clickable red/yellow banner linking to evil.com).
+                            H: The target platform may be vulnerable to IDOR, allowing unauthorized access to other clinic schedules.M: Used Burp Suite to intercept and modify the clinic_id parameter.T: The clinic_id parameter in schedule-related requests.R: Able to view appointment schedules of other clinics without authorization.
                         </div>
                     </div>
                     
@@ -160,12 +160,12 @@
                         <div class="action-header-modern">
                             <div class="action-date">
                                 <i class="fa-regular fa-calendar"></i>
-                                2025-09-16 00:59
+                                2025-09-16 00:54
                             </div>
-                            <span class="action-score">+22.5 pts</span>
+                            <span class="action-score">+5.75 pts</span>
                         </div>
                         <div class="action-summary-modern">
-                            H: The target platform may be vulnerable to IDOR, allowing unauthorized access to other clinic schedules.M: Used Burp Suite to intercept and modify the clinic_id parameter.T: The clinic_id parameter in schedule-related requests.R: Able to view appointment schedules of other clinics without authorization.
+                            Found an html injection in a programH: The Invite User modal in the program Dashboard may be vulnerable to HTML injection via the &#34;Link to Practitioner&#34; dropdown field.M: Manual testing with a crafted practitioner Display Name containing an HTML payload, later used in the Invite User modal.T: The &#34;Link to Practitioner&#34; dropdown field in the Invite User modal.R: The payload successfully rendered as custom HTML (a large clickable red/yellow banner linking to evil.com).
                         </div>
                     </div>
                     
@@ -357,7 +357,7 @@
 
 
         <footer>
-            <p>Last updated: 2025-09-20 09:19:41</p>
+            <p>Last updated: 2025-09-20 09:38:20</p>
         </footer>
     </div>
     <script src="static/js/script.js"></script>

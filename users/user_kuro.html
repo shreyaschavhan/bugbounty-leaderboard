@@ -54,7 +54,7 @@
                     <i class="fa-solid fa-trophy"></i>
                 </div>
                 <div class="stat-details">
-                    <span class="stat-value">3</span>
+                    <span class="stat-value">4</span>
                     <span class="stat-label">Rank</span>
                 </div>
             </div>
@@ -147,12 +147,12 @@
                         <div class="action-header-modern">
                             <div class="action-date">
                                 <i class="fa-regular fa-calendar"></i>
-                                2025-09-14 16:01
+                                2025-09-16 00:11
                             </div>
-                            <span class="action-score">+17.0 pts</span>
+                            <span class="action-score">+13.0 pts</span>
                         </div>
                         <div class="action-summary-modern">
-                            I identified a vulnerability where a workspace admin could favorite metrics of another primary owner without access. Using Caido proxy, I intercepted requests and swapped JWT tokens to impersonate the primary owner
+                            In this session, the tester investigated an IDOR-like vulnerability within an organizationâs multi-builder setup. The hypothesis was that a builder-level account in org1 might be able to tamper with or impact another builder accountâs resources.Using Caido for traffic inspection and manual request manipulation, the tester took requests originating from a builder1 application and modified both the JWT token and CSRF token to values belonging to builder2. Despite documentation explicitly stating that âno one can act without joining the application,â the tester observed that builder2 could delete builder1âs favorites folder, demonstrating unauthorized cross-account access.
                         </div>
                     </div>
                     
@@ -173,12 +173,12 @@
                         <div class="action-header-modern">
                             <div class="action-date">
                                 <i class="fa-regular fa-calendar"></i>
-                                2025-09-16 00:11
+                                2025-09-14 16:01
                             </div>
-                            <span class="action-score">+13.0 pts</span>
+                            <span class="action-score">+17.0 pts</span>
                         </div>
                         <div class="action-summary-modern">
-                            In this session, the tester investigated an IDOR-like vulnerability within an organizationâs multi-builder setup. The hypothesis was that a builder-level account in org1 might be able to tamper with or impact another builder accountâs resources.Using Caido for traffic inspection and manual request manipulation, the tester took requests originating from a builder1 application and modified both the JWT token and CSRF token to values belonging to builder2. Despite documentation explicitly stating that âno one can act without joining the application,â the tester observed that builder2 could delete builder1âs favorites folder, demonstrating unauthorized cross-account access.
+                            I identified a vulnerability where a workspace admin could favorite metrics of another primary owner without access. Using Caido proxy, I intercepted requests and swapped JWT tokens to impersonate the primary owner
                         </div>
                     </div>
                     
@@ -370,7 +370,7 @@
 
 
         <footer>
-            <p>Last updated: 2025-09-20 09:19:41</p>
+            <p>Last updated: 2025-09-20 09:38:20</p>
         </footer>
     </div>
     <script src="static/js/script.js"></script>
