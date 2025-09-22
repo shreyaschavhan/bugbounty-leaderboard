@@ -63,7 +63,7 @@
                     <i class="fa-solid fa-star"></i>
                 </div>
                 <div class="stat-details">
-                    <span class="stat-value">283.0</span>
+                    <span class="stat-value">241.0</span>
                     <span class="stat-label">Total Score</span>
                 </div>
             </div>
@@ -91,7 +91,7 @@
                         <h4>Past Self</h4>
                         <i class="fa-solid fa-clock-rotate-left"></i>
                     </div>
-                    <div class="battle-score">40.4</div>
+                    <div class="battle-score">34.4</div>
                     <p>7-day average</p>
                 </div>
                 
@@ -117,7 +117,7 @@
                         <h4>Future Self</h4>
                         <i class="fa-solid fa-rocket"></i>
                     </div>
-                    <div class="battle-score">44.5</div>
+                    <div class="battle-score">37.9</div>
                     <p>Today's goal</p>
                 </div>
             </div>
@@ -244,19 +244,6 @@
                         </div>
                         <div class="action-summary-modern">
                             Focused more on the SSRF, figured out they are using an old library Jakarta Commons-HttpClient/3.1. This is interesting as the java library is deprecated in 2007. I also see http 1.1, and I saw a talk about http dsync attack, Iâm thinking of how i can use that to my advantage. Also started fuzzing a little to analyze the response for more information on how the functionality might be working.
-                        </div>
-                    </div>
-                    
-                    <div class="action-card-modern user-action">
-                        <div class="action-header-modern">
-                            <div class="action-date">
-                                <i class="fa-regular fa-calendar"></i>
-                                2025-09-15 18:43
-                            </div>
-                            <span class="action-score">+42.0 pts</span>
-                        </div>
-                        <div class="action-summary-modern">
-                            I tested total 3 hypothesis in this session. I started retesting the previous week&#39;s lead from scratch as I almost forgot everything. It was the OAuth integration feature. The target had an upload feature where we could upload photos from our google photos account. It was a 3 step process. 1. Connect your google account2. Choose your photo3. The site fetches that photo and upload to your accountThe main thing here is - if the site doesn&#39;t handle the token given by google properly, we can steal someone else&#39;s photos from their google account - which is the highest impact we can achieve here.I tried understanding the flow. Found the token being used in the client side. Then, found a test case where I could test for an IDOR, if it would have worked - i would have got google token for someone else.Then came across the SSRF related endpoint.Need to test it more.
                         </div>
                     </div>
                     
@@ -448,7 +435,7 @@
 
 
         <footer>
-            <p>Last updated: 2025-09-22 18:29:23</p>
+            <p>Last updated: 2025-09-22 18:49:07</p>
         </footer>
     </div>
     <script src="static/js/script.js"></script>
