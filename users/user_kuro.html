@@ -63,7 +63,7 @@
                     <i class="fa-solid fa-star"></i>
                 </div>
                 <div class="stat-details">
-                    <span class="stat-value">22.5</span>
+                    <span class="stat-value">13.0</span>
                     <span class="stat-label">Total Score</span>
                 </div>
             </div>
@@ -91,7 +91,7 @@
                         <h4>Past Self</h4>
                         <i class="fa-solid fa-clock-rotate-left"></i>
                     </div>
-                    <div class="battle-score">3.2</div>
+                    <div class="battle-score">1.9</div>
                     <p>7-day average</p>
                 </div>
                 
@@ -117,7 +117,7 @@
                         <h4>Future Self</h4>
                         <i class="fa-solid fa-rocket"></i>
                     </div>
-                    <div class="battle-score">3.5</div>
+                    <div class="battle-score">2.0</div>
                     <p>Today's goal</p>
                 </div>
             </div>
@@ -153,19 +153,6 @@
                         </div>
                         <div class="action-summary-modern">
                             In this session, the tester investigated an IDOR-like vulnerability within an organizationâs multi-builder setup. The hypothesis was that a builder-level account in org1 might be able to tamper with or impact another builder accountâs resources.Using Caido for traffic inspection and manual request manipulation, the tester took requests originating from a builder1 application and modified both the JWT token and CSRF token to values belonging to builder2. Despite documentation explicitly stating that âno one can act without joining the application,â the tester observed that builder2 could delete builder1âs favorites folder, demonstrating unauthorized cross-account access.
-                        </div>
-                    </div>
-                    
-                    <div class="action-card-modern user-action">
-                        <div class="action-header-modern">
-                            <div class="action-date">
-                                <i class="fa-regular fa-calendar"></i>
-                                2025-09-15 18:54
-                            </div>
-                            <span class="action-score">+9.5 pts</span>
-                        </div>
-                        <div class="action-summary-modern">
-                            The tester formed a clear hypothesis that Insecure Direct Object Reference (IDOR) might be possible by swapping organization identifiers (UUIDs and JWTs) between Organization 1 and Organization 2. Using Burp Suite for one hour, they systematically manipulated UUID and JWT values across all /api/* endpoints to test access control enforcement. Despite extensive parameter tampering and endpoint coverage, no unauthorized access or interesting results were observed. The tester concluded the attack vector was not worth further pursuit and moved on.
                         </div>
                     </div>
                     
@@ -357,7 +344,7 @@
 
 
         <footer>
-            <p>Last updated: 2025-09-22 18:49:07</p>
+            <p>Last updated: 2025-09-22 19:17:07</p>
         </footer>
     </div>
     <script src="static/js/script.js"></script>
