@@ -110,10 +110,10 @@
                             </div>
                             Shubham Khanna
                         </td>
-                        <td class="score-value">39.5</td>
+                        <td class="score-value">56.0</td>
                         <td class="action-count">
                             <i class="fa-solid fa-list-check"></i>
-                            6
+                            7
                         </td>
                     </tr>
                     
@@ -203,6 +203,29 @@
             <h2><i class="fa-solid fa-bolt"></i> Recent Deep Actions</h2>
         </div>
         <div class="actions-container">
+            
+            <div class="action-card-modern"
+                 data-summary="Continued Manual test.  tested Target&#39;s sign up and Oauth flows. In registration tried signing with existing username, tried duplicate account, messing up with email verification page. registration is correctly blocked duplicates account creation. no vulnerability found in the registation/signup page.  moved forward to test its Oauth redirect_uri by trying different subdomains,paths, some custom paths .checked regex handling to check if any urls could be injected.  no vulnerability found in Oauth redirection flow.  next step is to test my account ( postlogin) section."
+                 data-user="Shubham Khanna"
+                 data-score="16.5"
+                 data-time="2025-09-22 19:40">
+                <div class="action-header-modern">
+                    <div class="action-user">
+                        <div class="avatar-xs">
+                            S
+                        </div>
+                        <span>Shubham Khanna</span>
+                    </div>
+                    <span class="action-score">+16.5 pts</span>
+                </div>
+                <div class="action-summary-modern">
+                    Continued Manual test.  tested Target&#39;s sign up and Oauth flows. In registration tried...
+                </div>
+                <div class="action-time-modern">
+                    <i class="fa-regular fa-clock"></i>
+                    2025-09-22 19:40
+                </div>
+            </div>
             
             <div class="action-card-modern"
                  data-summary="Post Feature:- Previously, posts were publicly visible; now no one can see them.- A hash value changed and a new  header was introduced, causing 403 errors on requests without the using new header.Deleted Chats:- Able to change titles of deleted chats, but could not access chat contents despite multiple attempts.API Key:Found an API key that was URL-safe Base64 encoded (32 raw bytes).Decoding revealed two concatenated 16-byte UUIDs:  bafcdcce-36ec-5324-512b-916054c61479  b73ad59f-9807-3b1b-0d76-2ea68fc4162cNext Step:Further investigation needed for deeper vulnerabilities."
@@ -411,29 +434,6 @@
                 </div>
             </div>
             
-            <div class="action-card-modern"
-                 data-summary="checked deep in js files found  on target in yesterday&#39;s session with potential sensitive info. Took closer look in redacted js file, Js revealed refresh_token:i, refresh_token:t, and multiple CLIENT_ID values. At first, these looked like possible secrets but after digging deeper, it turned out they were just internal variable names and static ids, not real tokens or secrets."
-                 data-user="Shubham Khanna"
-                 data-score="12.0"
-                 data-time="2025-09-18 03:27">
-                <div class="action-header-modern">
-                    <div class="action-user">
-                        <div class="avatar-xs">
-                            S
-                        </div>
-                        <span>Shubham Khanna</span>
-                    </div>
-                    <span class="action-score">+12.0 pts</span>
-                </div>
-                <div class="action-summary-modern">
-                    checked deep in js files found  on target in yesterday&#39;s session with potential sensitive...
-                </div>
-                <div class="action-time-modern">
-                    <i class="fa-regular fa-clock"></i>
-                    2025-09-18 03:27
-                </div>
-            </div>
-            
         </div>
     </section>
 </div>
@@ -453,7 +453,7 @@
 
 
         <footer>
-            <p>Last updated: 2025-09-22 13:30:55</p>
+            <p>Last updated: 2025-09-22 14:22:39</p>
         </footer>
     </div>
     <script src="static/js/script.js"></script>

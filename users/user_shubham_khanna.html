@@ -63,7 +63,7 @@
                     <i class="fa-solid fa-star"></i>
                 </div>
                 <div class="stat-details">
-                    <span class="stat-value">39.5</span>
+                    <span class="stat-value">56.0</span>
                     <span class="stat-label">Total Score</span>
                 </div>
             </div>
@@ -72,7 +72,7 @@
                     <i class="fa-solid fa-fire"></i>
                 </div>
                 <div class="stat-details">
-                    <span class="stat-value">0</span>
+                    <span class="stat-value">1</span>
                     <span class="stat-label">Day Streak</span>
                 </div>
             </div>
@@ -91,7 +91,7 @@
                         <h4>Past Self</h4>
                         <i class="fa-solid fa-clock-rotate-left"></i>
                     </div>
-                    <div class="battle-score">5.6</div>
+                    <div class="battle-score">8.0</div>
                     <p>7-day average</p>
                 </div>
                 
@@ -104,7 +104,7 @@
                         <h4>Present Self</h4>
                         <i class="fa-solid fa-circle"></i>
                     </div>
-                    <div class="battle-score">0</div>
+                    <div class="battle-score">16.5</div>
                     <p>Today's score</p>
                 </div>
                 
@@ -117,7 +117,7 @@
                         <h4>Future Self</h4>
                         <i class="fa-solid fa-rocket"></i>
                     </div>
-                    <div class="battle-score">6.2</div>
+                    <div class="battle-score">8.8</div>
                     <p>Today's goal</p>
                 </div>
             </div>
@@ -221,6 +221,19 @@
                         </div>
                     </div>
                     
+                    <div class="action-card-modern user-action">
+                        <div class="action-header-modern">
+                            <div class="action-date">
+                                <i class="fa-regular fa-calendar"></i>
+                                2025-09-22 19:40
+                            </div>
+                            <span class="action-score">+16.5 pts</span>
+                        </div>
+                        <div class="action-summary-modern">
+                            Continued Manual test.  tested Target&#39;s sign up and Oauth flows. In registration tried signing with existing username, tried duplicate account, messing up with email verification page. registration is correctly blocked duplicates account creation. no vulnerability found in the registation/signup page.  moved forward to test its Oauth redirect_uri by trying different subdomains,paths, some custom paths .checked regex handling to check if any urls could be injected.  no vulnerability found in Oauth redirection flow.  next step is to test my account ( postlogin) section.
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
         </div>
@@ -236,7 +249,7 @@
             labels: ['2025-09-16', '2025-09-17', '2025-09-18', '2025-09-19', '2025-09-20', '2025-09-21', '2025-09-22'],
             datasets: [{
                 label: 'Current Week',
-                data: [6.0, 10.5, 12.0, 0, 5.0, 0, 0],
+                data: [6.0, 10.5, 12.0, 0, 5.0, 0, 16.5],
                 borderColor: '#8B5CF6',
                 backgroundColor: 'rgba(139, 92, 246, 0.1)',
                 tension: 0.1,
@@ -409,7 +422,7 @@
 
 
         <footer>
-            <p>Last updated: 2025-09-22 13:30:55</p>
+            <p>Last updated: 2025-09-22 14:22:39</p>
         </footer>
     </div>
     <script src="static/js/script.js"></script>
