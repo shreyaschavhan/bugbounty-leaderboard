@@ -110,10 +110,10 @@
                             </div>
                             Shubham Khanna
                         </td>
-                        <td class="score-value">44.0</td>
+                        <td class="score-value">55.5</td>
                         <td class="action-count">
                             <i class="fa-solid fa-list-check"></i>
-                            5
+                            6
                         </td>
                     </tr>
                     
@@ -165,6 +165,29 @@
             <h2><i class="fa-solid fa-bolt"></i> Recent Deep Actions</h2>
         </div>
         <div class="actions-container">
+            
+            <div class="action-card-modern"
+                 data-summary="Continued Manual Testing. Testing of My profile section. Tried IDOR - changed userid in the in requests when updating username.tried updating  email and profile using another user id  in request. received 403 in response. then checked Delete functionality - tried using forgot password with deleted account email id.checked if target still recognise the user account. but it didn&#39;t recognised the email after account deletion.then tested password reset requests by changing userid."
+                 data-user="Shubham Khanna"
+                 data-score="11.5"
+                 data-time="2025-09-23 20:38">
+                <div class="action-header-modern">
+                    <div class="action-user">
+                        <div class="avatar-xs">
+                            S
+                        </div>
+                        <span>Shubham Khanna</span>
+                    </div>
+                    <span class="action-score">+11.5 pts</span>
+                </div>
+                <div class="action-summary-modern">
+                    Continued Manual Testing. Testing of My profile section. Tried IDOR - changed userid in the in...
+                </div>
+                <div class="action-time-modern">
+                    <i class="fa-regular fa-clock"></i>
+                    2025-09-23 20:38
+                </div>
+            </div>
             
             <div class="action-card-modern"
                  data-summary="Continued Manual test.  tested Target&#39;s sign up and Oauth flows. In registration tried signing with existing username, tried duplicate account, messing up with email verification page. registration is correctly blocked duplicates account creation. no vulnerability found in the registation/signup page.  moved forward to test its Oauth redirect_uri by trying different subdomains,paths, some custom paths .checked regex handling to check if any urls could be injected.  no vulnerability found in Oauth redirection flow.  next step is to test my account ( postlogin) section."
@@ -373,29 +396,6 @@
                 </div>
             </div>
             
-            <div class="action-card-modern"
-                 data-summary="Dug Deeper into the SSRF behavior, total 2 test cases. Figured 3 ways forward to this behavior. Gotta research deeper, feels suspicious."
-                 data-user="Shreyas Chavhan"
-                 data-score="50.5"
-                 data-time="2025-09-18 15:23">
-                <div class="action-header-modern">
-                    <div class="action-user">
-                        <div class="avatar-xs">
-                            S
-                        </div>
-                        <span>Shreyas Chavhan</span>
-                    </div>
-                    <span class="action-score">+50.5 pts</span>
-                </div>
-                <div class="action-summary-modern">
-                    Dug Deeper into the SSRF behavior, total 2 test cases. Figured 3 ways forward to this behavior....
-                </div>
-                <div class="action-time-modern">
-                    <i class="fa-regular fa-clock"></i>
-                    2025-09-18 15:23
-                </div>
-            </div>
-            
         </div>
     </section>
 </div>
@@ -415,7 +415,7 @@
 
 
         <footer>
-            <p>Last updated: 2025-09-23 14:44:07</p>
+            <p>Last updated: 2025-09-23 15:22:56</p>
         </footer>
     </div>
     <script src="static/js/script.js"></script>
