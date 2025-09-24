@@ -63,7 +63,7 @@
                     <i class="fa-solid fa-star"></i>
                 </div>
                 <div class="stat-details">
-                    <span class="stat-value">45.0</span>
+                    <span class="stat-value">60.5</span>
                     <span class="stat-label">Total Score</span>
                 </div>
             </div>
@@ -91,7 +91,7 @@
                         <h4>Past Self</h4>
                         <i class="fa-solid fa-clock-rotate-left"></i>
                     </div>
-                    <div class="battle-score">6.4</div>
+                    <div class="battle-score">8.6</div>
                     <p>7-day average</p>
                 </div>
                 
@@ -117,7 +117,7 @@
                         <h4>Future Self</h4>
                         <i class="fa-solid fa-rocket"></i>
                     </div>
-                    <div class="battle-score">7.1</div>
+                    <div class="battle-score">9.5</div>
                     <p>Today's goal</p>
                 </div>
             </div>
@@ -192,6 +192,19 @@
                         </div>
                         <div class="action-summary-modern">
                             Continued Manual Testing. Testing of My profile section. Tried IDOR - changed userid in the in requests when updating username.tried updating  email and profile using another user id  in request. received 403 in response. then checked Delete functionality - tried using forgot password with deleted account email id.checked if target still recognise the user account. but it didn&#39;t recognised the email after account deletion.then tested password reset requests by changing userid.
+                        </div>
+                    </div>
+                    
+                    <div class="action-card-modern user-action">
+                        <div class="action-header-modern">
+                            <div class="action-date">
+                                <i class="fa-regular fa-calendar"></i>
+                                2025-09-25 03:06
+                            </div>
+                            <span class="action-score">+15.5 pts</span>
+                        </div>
+                        <div class="action-summary-modern">
+                            Tested Target&#39;s chat with us Ai Chatbot section for prompt injections and XSS. Using Burp I sent ~1500 crafted prompt injection payloads to see if I could manipulate the AI chatbot to return its system prompt or internal data leak. Also checked js endpoints for XSS which were rendering the chat responses. It returned 403 blocked by WAF Akamai. No bug found so far.
                         </div>
                     </div>
                     
@@ -383,7 +396,7 @@
 
 
         <footer>
-            <p>Last updated: 2025-09-24 21:18:33</p>
+            <p>Last updated: 2025-09-24 21:38:42</p>
         </footer>
     </div>
     <script src="static/js/script.js"></script>
