@@ -27,7 +27,7 @@
         <header class="arena-header">
             <div class="header-content">
                 <h1><i class="fa-solid fa-trophy"></i> 7-Day Rolling Leaderboard</h1>
-                <p>Tracking contributions from 2025-09-16 to 2025-09-23</p>
+                <p>Tracking contributions from 2025-09-17 to 2025-09-24</p>
             </div>
             <div class="header-actions">
                 <button class="btn-icon" id="themeToggle">
@@ -63,7 +63,7 @@
                     <i class="fa-solid fa-star"></i>
                 </div>
                 <div class="stat-details">
-                    <span class="stat-value">55.5</span>
+                    <span class="stat-value">50.5</span>
                     <span class="stat-label">Total Score</span>
                 </div>
             </div>
@@ -72,7 +72,7 @@
                     <i class="fa-solid fa-fire"></i>
                 </div>
                 <div class="stat-details">
-                    <span class="stat-value">2</span>
+                    <span class="stat-value">0</span>
                     <span class="stat-label">Day Streak</span>
                 </div>
             </div>
@@ -91,7 +91,7 @@
                         <h4>Past Self</h4>
                         <i class="fa-solid fa-clock-rotate-left"></i>
                     </div>
-                    <div class="battle-score">7.9</div>
+                    <div class="battle-score">7.2</div>
                     <p>7-day average</p>
                 </div>
                 
@@ -104,7 +104,7 @@
                         <h4>Present Self</h4>
                         <i class="fa-solid fa-circle"></i>
                     </div>
-                    <div class="battle-score">11.5</div>
+                    <div class="battle-score">0</div>
                     <p>Today's score</p>
                 </div>
                 
@@ -117,7 +117,7 @@
                         <h4>Future Self</h4>
                         <i class="fa-solid fa-rocket"></i>
                     </div>
-                    <div class="battle-score">8.7</div>
+                    <div class="battle-score">7.9</div>
                     <p>Today's goal</p>
                 </div>
             </div>
@@ -186,19 +186,6 @@
                         <div class="action-header-modern">
                             <div class="action-date">
                                 <i class="fa-regular fa-calendar"></i>
-                                2025-09-17 01:09
-                            </div>
-                            <span class="action-score">+5.0 pts</span>
-                        </div>
-                        <div class="action-summary-modern">
-                            Recon done on target with nikto,nuclei,gobuster and katana fuzzing.Found some potential vulnerable parameter -  no XSS reflected or sqli so far while doing manual tests.next step is to do obfuscation on xss payloads.Found few JS endpoint with potential sensitive information.
-                        </div>
-                    </div>
-                    
-                    <div class="action-card-modern user-action">
-                        <div class="action-header-modern">
-                            <div class="action-date">
-                                <i class="fa-regular fa-calendar"></i>
                                 2025-09-22 19:40
                             </div>
                             <span class="action-score">+16.5 pts</span>
@@ -233,10 +220,10 @@
     const chart = new Chart(ctx, {
         type: 'line',
         data: {
-            labels: ['2025-09-17', '2025-09-18', '2025-09-19', '2025-09-20', '2025-09-21', '2025-09-22', '2025-09-23'],
+            labels: ['2025-09-18', '2025-09-19', '2025-09-20', '2025-09-21', '2025-09-22', '2025-09-23', '2025-09-24'],
             datasets: [{
                 label: 'Current Week',
-                data: [10.5, 12.0, 0, 5.0, 0, 16.5, 11.5],
+                data: [12.0, 0, 5.0, 0, 16.5, 11.5, 0],
                 borderColor: '#8B5CF6',
                 backgroundColor: 'rgba(139, 92, 246, 0.1)',
                 tension: 0.1,
@@ -409,7 +396,7 @@
 
 
         <footer>
-            <p>Last updated: 2025-09-23 23:38:23</p>
+            <p>Last updated: 2025-09-24 01:41:54</p>
         </footer>
     </div>
     <script src="static/js/script.js"></script>
